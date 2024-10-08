@@ -9,7 +9,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import GetMousePosition from "../utils/GetMousePosition";
-import '../app.css'
+import '../App.css'
 import { useState } from "react";
 
 const ServiceCard = ({ index, title, icon }) => (
