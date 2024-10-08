@@ -50,18 +50,18 @@ const About = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [maskSize, setMaskSize] = useState(40);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-    setMaskSize(180);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsHovered(true);
+  //   setMaskSize(180);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-    setMaskSize(80);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsHovered(false);
+  //   setMaskSize(80);
+  // };
 
-  const offsetX = isHovered ? maskSize / 2 : 20;
-  const offsetY = isHovered ? maskSize / 2 : 20;
+  // const offsetX = isHovered ? maskSize / 2 : 20;
+  // const offsetY = isHovered ? maskSize / 2 : 20;
 
   return (
 
@@ -73,12 +73,12 @@ const About = () => {
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] cursor-none'
       >
 
-        {/* <motion.p className="mask h-svh"
+        <motion.p className="mask h-svh"
           animate={{
-            WebkitMaskPosition: `${x - 340}px ${y - 380}px`,
+            WebkitMaskPosition: `${x - 330}px ${y - 335}px`,
             WebkitMaskSize: `${maskSize}px`
           }}
 
@@ -90,8 +90,8 @@ const About = () => {
           >
             hello, I&apos;m a full-stack dev with a love for all things TypeScript, JavaScript, and the magic of Angular, React, and Node.js. I&apos;ve dived into MongoDB, SQL, and Node.js in my projects and can&apos;t get enough of the problem-solving buzz. Quick learner? You bet! I&apos;m all about teaming up to build cool, user-friendly stuff. Ready to jump into the real world, tackle challenges, and bring some fresh, fun ideas to the table! Let&apos;s do this!
           </span>
-        </motion.p> */}
-
+        </motion.p>
+        {/* 
         <motion.p
           className="mask h-svh"
           animate={{
@@ -100,13 +100,13 @@ const About = () => {
           }}
           transition={{ type: "tween", ease: "backOut" }}
         >
-          <p
+          <span
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
             hello, I&apos;m a full-stack dev with a love for all things TypeScript, JavaScript, and the magic of Angular, React, and Node.js. I&apos;ve dived into MongoDB, SQL, and Node.js in my projects and can&apos;t get enough of the problem-solving buzz. Quick learner? You bet! I&apos;m all about teaming up to build cool, user-friendly stuff. Ready to jump into the real world, tackle challenges, and bring some fresh, fun ideas to the table! Let&apos;s do this!
-          </p>
-        </motion.p>
+          </span>
+        </motion.p> */}
 
 
 
