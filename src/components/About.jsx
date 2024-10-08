@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
-'use client'
+
 
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
