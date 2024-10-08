@@ -1,7 +1,7 @@
 import {
   mobile,
   backend,
-  creator,
+  // creator,
   web,
   javascript,
   typescript,
@@ -181,7 +181,7 @@ const testimonials = [
   {
     testimonial:
       "API Development and Integration involve creating interfaces to connect software systems, enabling seamless communication and data exchange across applications.",
-    name: "Chris Brown",
+    name: "API Development and Integration",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
@@ -189,7 +189,7 @@ const testimonials = [
   {
     testimonial:
       "Authentication verifies user identity, while authorization determines access rights, ensuring secure and controlled user interactions within systems and applications.",
-    name: "Lisa Wang",
+    name: "Authentication and Authorization",
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
