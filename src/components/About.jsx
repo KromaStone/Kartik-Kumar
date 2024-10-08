@@ -52,12 +52,12 @@ const About = () => {
 
   const handleMouseEnter = () => {
     setIsHovered(true);
-    setMaskSize(120);
+    setMaskSize(180);
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-    setMaskSize(40);
+    setMaskSize(80);
   };
 
   const offsetX = isHovered ? maskSize / 2 : 20;

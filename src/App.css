@@ -1,9 +1,9 @@
 .mask {
     position: absolute;
     mask-image: url(../public/mask.svg);
-    background-color: aqua;
+    background-color: white;
     mask-repeat: no-repeat;
-    color: red;
+    color: #121212;
     margin: -160px -290px;
     padding: 160px 290px;
 }
