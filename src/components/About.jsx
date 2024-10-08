@@ -8,7 +8,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import GetMousePosition from "../utils/getMousePosition";
+import GetMousePosition from "../utils/GetMousePosition";
 import '../app.css'
 import { useState } from "react";
 
