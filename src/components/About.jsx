@@ -76,7 +76,7 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] cursor-none'
       >
 
-        <motion.p className="mask h-svh"
+        {/* <motion.p className="mask h-svh"
           animate={{
             WebkitMaskPosition: `${x - 330}px ${y - 335}px`,
             WebkitMaskSize: `${maskSize}px`
@@ -90,7 +90,7 @@ const About = () => {
           >
             hello, I&apos;m a full-stack dev with a love for all things TypeScript, JavaScript, and the magic of Angular, React, and Node.js. I&apos;ve dived into MongoDB, SQL, and Node.js in my projects and can&apos;t get enough of the problem-solving buzz. Quick learner? You bet! I&apos;m all about teaming up to build cool, user-friendly stuff. Ready to jump into the real world, tackle challenges, and bring some fresh, fun ideas to the table! Let&apos;s do this!
           </span>
-        </motion.p>
+        </motion.p> */}
         {/* 
         <motion.p
           className="mask h-svh"
@@ -110,7 +110,7 @@ const About = () => {
 
 
 
-        <p className="body ">
+        <p>
           I&apos;m a passionate full stack developer with a solid foundation in TypeScript, JavaScript, and frameworks like Angular, React, and Node.js. I&apos;ve gained hands-on experience with MongoDB, SQL, and Node.js through projects and coursework. As a quick learner, I enjoy working in teams to create efficient, user-friendly solutions and am eager to apply my skills to real-world challenges. Excited to kickstart my career and bring fresh ideas to life!
         </p>
 
