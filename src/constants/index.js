@@ -216,8 +216,10 @@ const projects = [
       },
     ],
     image: teslaProject,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/KromaStone/TeslaApp",
+    project_live_link: "tesla-app-five.vercel.app",
   },
+
   {
     name: "Portfolio",
     description:
@@ -237,8 +239,10 @@ const projects = [
       },
     ],
     image: portfolioProject,
-    source_code_link: "https://github.com/KromaStone/TeslaApp",
+    source_code_link: "https://github.com/KromaStone/Kartik-Kumar",
+    project_live_link: "kartik-kumar.vercel.app"
   },
+
   {
     name: "Weather App",
     description:
@@ -259,6 +263,31 @@ const projects = [
     ],
     image: weatherAppProject,
     source_code_link: "https://github.com/KromaStone/WeatherApp",
+    project_live_link: "weather-app-phi-sand.vercel.app"
+  },
+
+
+  {
+    name: "Web Extension",
+    description:
+      "I have developed this web extension using leveraging JavaScript, HTML, and CSS. The Extension Genreate random paswords includion uppercase, lowercase, numbers and charecter.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: weatherAppProject,
+    source_code_link: "https://github.com/KromaStone/Password-Generator-WE",
+    project_live_link: ""
   },
 ];
 

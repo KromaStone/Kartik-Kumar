@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import website from "../assets/website.png"
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
@@ -27,10 +27,10 @@ import tesla from "./company/tesla.png";
 import teslaProject from "./tesla.jpeg";
 import portfolioProject from "./portfolioProject.jpeg";
 import weatherAppProject from "./weatherAppProject.png";
-
 import angular from './tech/angular.png'
 import sql from './tech/sql.png'
 export {
+  website,
   logo,
   backend,
   creator,

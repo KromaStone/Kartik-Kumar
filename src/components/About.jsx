@@ -8,9 +8,8 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import GetMousePosition from "../utils/GetMousePosition";
+// import GetMousePosition from "../utils/GetMousePosition";
 import '../App.css'
-import { useState } from "react";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -46,9 +45,9 @@ const About = () => {
   // const [isHovered, setIsHovered] = useState(false)
   // const maskSize = isHovered ? 100 : 100;
 
-  const { x, y } = GetMousePosition();
-  const [isHovered, setIsHovered] = useState(false);
-  const [maskSize, setMaskSize] = useState(40);
+  // const { x, y } = GetMousePosition();
+  // const [isHovered, setIsHovered] = useState(false);
+  // const [maskSize, setMaskSize] = useState(40);
 
   // const handleMouseEnter = () => {
   //   setIsHovered(true);
