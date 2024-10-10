@@ -22,7 +22,8 @@ import {
   sql,
   weatherAppProject,
   threejs,
-  angular
+  angular,
+  webExtenstion
 } from "../assets";
 
 export const navLinks = [
@@ -266,7 +267,6 @@ const projects = [
     project_live_link: "weather-app-phi-sand.vercel.app"
   },
 
-
   {
     name: "Web Extension",
     description:
@@ -285,7 +285,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: weatherAppProject,
+    image: webExtenstion,
     source_code_link: "https://github.com/KromaStone/Password-Generator-WE",
     project_live_link: ""
   },

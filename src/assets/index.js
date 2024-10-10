@@ -23,6 +23,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import webExtenstion from "./webExtenstion.png"
 
 import teslaProject from "./tesla.jpeg";
 import portfolioProject from "./portfolioProject.jpeg";
@@ -58,5 +59,6 @@ export {
   teslaProject,
   portfolioProject,
   weatherAppProject,
-  angular
+  angular,
+  webExtenstion
 };
