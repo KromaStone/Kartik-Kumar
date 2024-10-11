@@ -19,7 +19,7 @@ const ProjectCard = ({
   project_live_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450, }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
@@ -31,7 +31,7 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover '>
 
             {project_live_link && (
               <div
@@ -41,7 +41,7 @@ const ProjectCard = ({
                 <img
                   src={website}
                   alt='source code'
-                  className='w-1/2 h-1/2 object-contain shadow-slate-200'
+                  className='w-1/2 h-1/2 object-contain shadow-slate-200 hover:scale-150 transition ease-in-out duration-300 '
                 />
               </div>
             )}
@@ -53,7 +53,7 @@ const ProjectCard = ({
               <img
                 src={github}
                 alt='source code'
-                className='w-1/2 h-1/2 object-contain'
+                className='w-1/2 h-1/2 object-contain hover:scale-150 transition ease-in-out duration-300'
               />
             </div>
 
