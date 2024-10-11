@@ -6,7 +6,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { toast, Toaster } from "sonner";
-
+import Footer from "./Footer";
 
 
 const Contact = () => {
@@ -74,6 +74,8 @@ const Contact = () => {
 
   return (
     <>
+      <Footer />
+
       <Toaster position="bottom-center" richColors />
       <div
         className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden `}
