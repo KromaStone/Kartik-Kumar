@@ -2,12 +2,11 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { toast, Toaster } from "sonner";
-import Footer from "./Footer";
-
+import { ContactAnimatedBeam } from "./ContactAnimatedBeam";
 
 const Contact = () => {
   const formRef = useRef();
@@ -74,7 +73,6 @@ const Contact = () => {
 
   return (
     <>
-      <Footer />
 
       <Toaster position="bottom-center" richColors />
       <div
@@ -138,10 +136,12 @@ const Contact = () => {
 
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+          className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] flex justify-center items-center'
         >
-          <EarthCanvas />
+          <ContactAnimatedBeam />
+          {/* <EarthCanvas /> */}
         </motion.div>
+
       </div>
     </>
   )
