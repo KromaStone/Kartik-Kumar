@@ -35,7 +35,11 @@ const ProjectCard = ({
 
             {project_live_link && (
               <div
-                onClick={() => window.open(project_live_link, "_blank")}
+                // onClick={() =>
+                //   window.open(project_live_link,
+                //   )}
+                onClick={() => window.open(project_live_link, '_blank')}
+
                 className='bg-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer absolute right-7'
               >
                 <img
@@ -47,7 +51,7 @@ const ProjectCard = ({
             )}
 
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(source_code_link)}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer z-10 '
             >
               <img

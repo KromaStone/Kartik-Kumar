@@ -222,7 +222,7 @@ const projects = [
     ],
     image: teslaProject,
     source_code_link: "https://github.com/KromaStone/TeslaApp",
-    project_live_link: "tesla-app-five.vercel.app",
+    project_live_link: "https://tesla-app-five.vercel.app",
   },
 
   {
@@ -245,7 +245,7 @@ const projects = [
     ],
     image: portfolioProject,
     source_code_link: "https://github.com/KromaStone/Kartik-Kumar",
-    project_live_link: "kartik-kumar.vercel.app"
+    project_live_link: "https://kartik-kumar.vercel.app"
   },
 
   {
@@ -268,7 +268,7 @@ const projects = [
     ],
     image: weatherAppProject,
     source_code_link: "https://github.com/KromaStone/WeatherApp",
-    project_live_link: "weather-app-phi-sand.vercel.app"
+    project_live_link: "https://weather-app-phi-sand.vercel.app"
   },
 
   {
