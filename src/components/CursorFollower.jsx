@@ -57,6 +57,7 @@ const CursorFollower = () => {
                             height: sizes[index],
                             backgroundColor: colors[index],
                             zIndex: isMoving ? 20 - index : 10 - index,
+                            // boxShadow: "rgb(255, 255, 255) 0px 0px 10px 2px"
                         }}
                     />
                 ))}
