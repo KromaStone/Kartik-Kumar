@@ -4,7 +4,6 @@
 import { forwardRef, useRef } from "react";
 import { cn } from '../lib/utils';
 import { AnimatedBeam } from "../components/ui/animated-beam";
-import resume from "../assets/Kartik-Kumar-Resume.pdf"
 
 const Circle = forwardRef(({ className, children }, ref) => (
     <div
