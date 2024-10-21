@@ -58,7 +58,7 @@ export function ContactAnimatedBeam() {
                         </a>
                     </Circle>
                     <Circle ref={div4Ref} className="size-16">
-                        <a target="_blank" href={resume} className="flex items-center justify-center w-auto size-16 text-xl font-bold px-3 text-[#121212] bg-[linear-gradient(#fff_50%,_#121212_50%)] bg-[length:100%_200%] bg-[position:0%_0%] rounded-lg shadow-md transition-[background-position,color] duration-500 hover:bg-[position:0%_100%] hover:text-white z-40">
+                        <a target="_blank" href="https://drive.google.com/file/d/1BSM5RliANF_STc_W0GMjzVe07mAkb1YB/view?usp=sharing" className="flex items-center justify-center w-auto size-16 text-xl font-bold px-3 text-[#121212] bg-[linear-gradient(#fff_50%,_#121212_50%)] bg-[length:100%_200%] bg-[position:0%_0%] rounded-lg shadow-md transition-[background-position,color] duration-500 hover:bg-[position:0%_100%] hover:text-white z-40">
                             {/* <Icons.openai /> */}
                             <button className="">Resume</button>
                         </a>
