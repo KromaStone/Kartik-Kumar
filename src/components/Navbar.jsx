@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <nav
       className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
+        } w-full flex items-center py-4 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
         }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -43,8 +43,8 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Kartik  Kumar&nbsp;
-            <span className='sm:block hidden'> | Developer</span>
+            Kartik  Kumar&nbsp; | &nbsp;
+            <span className='sm:block hidden hover:text-[#00e187] transition-colors duration-300'>Developer</span>
           </p>
         </Link>
 
@@ -52,8 +52,12 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`
+                ${active === nav.title ? "text-white" : "text-white"} 
+                border-b-2 border-[rgba(0,0,0,0)]
+                hover:text-[#00e187] text-[18px] font-medium cursor-pointer transition ease-in-out duration-300 rounded px-1
+                hover:border-b-[#00e187]
+              `}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
