@@ -30,6 +30,7 @@ import portfolioProject from "./portfolioProject.jpeg";
 import weatherAppProject from "./weatherAppProject.png";
 import angular from './tech/angular.png'
 import sql from './tech/sql.png'
+import fitness360Project from './fitness360Project.png'
 export {
   website,
   logo,
@@ -60,5 +61,6 @@ export {
   portfolioProject,
   weatherAppProject,
   angular,
-  webExtenstion
+  webExtenstion,
+  fitness360Project
 };

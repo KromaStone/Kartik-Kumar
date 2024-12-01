@@ -17,6 +17,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   project_live_link,
+  underProgress
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} >
@@ -69,6 +70,8 @@ const ProjectCard = ({
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          {/* {underProgress &&
+            <p>jdabsjbdfba kd</p>} */}
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 

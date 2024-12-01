@@ -23,7 +23,8 @@ import {
   weatherAppProject,
   threejs,
   angular,
-  webExtenstion
+  webExtenstion,
+  fitness360Project
 } from "../assets";
 
 export const navLinks = [
@@ -292,6 +293,30 @@ const projects = [
     image: webExtenstion,
     source_code_link: "https://github.com/KromaStone/Password-Generator-WE",
     project_live_link: ""
+  },
+
+  {
+    name: "(under Development)",
+    underProgress: true,
+    description:
+      "A comprehensive fitness web application offering live video streaming, pre-recorded sessions, personalized diet charts, live classes, and interactive chat features for both users and trainers.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fitness360Project,
+    source_code_link: "https://github.com/KromaStone",
+    project_live_link: "https://github.com/KromaStone",
   },
 ];
 
