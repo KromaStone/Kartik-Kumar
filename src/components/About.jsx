@@ -1,23 +1,20 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-// import { BorderBeam } from "@/components/magicui/border-beam.tsx";
-// import { BorderBeam } from "../components/ui/border-beam";
 
 import '../App.css'
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <div className='xs:w-[250px] w-full cursor-pointer'>
     {/* <Tilt className='xs:w-[250px] sm:w-[250px] lg:w-[30%] w-full'> */}
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card hover:shadow-500/40 '
     >
       {/* <BorderBeam size={250} duration={12} delay={9} /> */}
 
@@ -27,7 +24,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col '
+        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col hover:bg-primary transition ease-in-out duration-300'
       >
 
         <img
@@ -41,7 +38,7 @@ const ServiceCard = ({ index, title, icon }) => (
         </h3>
       </div>
     </motion.div>
-  </Tilt>
+  </div>
 );
 
 const About = () => {

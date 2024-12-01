@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -9,6 +9,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+
 const ProjectCard = ({
   index,
   name,
@@ -17,13 +18,12 @@ const ProjectCard = ({
   image,
   source_code_link,
   project_live_link,
-  underProgress
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} >
-      <Tilt
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className={`orange-pink-gradient p-[1px] rounded-2xl `}>
+      <div
         options={{ max: 45, scale: 1, speed: 450, }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border-[444444] hover:bg-primary transition ease-in-out duration-300 '
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -85,7 +85,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };

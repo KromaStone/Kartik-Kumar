@@ -51,6 +51,16 @@
   background: -webkit-linear-gradient(90deg, #9cffa1 0%, #2effff 100%);
 }
 
+.orange-pink-gradient {
+  background: "#00e187";
+
+  background: linear-gradient(90deg, #41729b 0%,
+      #00e187 100%);
+
+  background: -webkit-linear-gradient(90deg,
+      #41729b 0%, #00e187 100%);
+}
+
 .orange-text-gradient {
   background: #f12711;
   /* fallback for old browsers */
