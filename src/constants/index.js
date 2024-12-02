@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  // creator,
   web,
   javascript,
   typescript,
@@ -36,10 +35,7 @@ export const navLinks = [
     id: "project",
     title: "Projects",
   },
-  // {
-  //   id: "work",
-  //   title: "Work",
-  // },
+
   {
     id: "contact",
     title: "Contact",
@@ -240,7 +236,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Tailwindcss",
         color: "pink-text-gradient",
       },
     ],

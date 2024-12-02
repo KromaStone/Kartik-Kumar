@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import CursorFollower from './components/CursorFollower';
 import './App.css';
 
-// Lazy load components
 const About = lazy(() => import('./components/About'));
 const Contact = lazy(() => import('./components/Contact'));
 const Feedbacks = lazy(() => import('./components/Feedbacks'));
@@ -12,7 +11,6 @@ const Hero = lazy(() => import('./components/Hero'));
 const Navbar = lazy(() => import('./components/Navbar'));
 const Tech = lazy(() => import('./components/Tech'));
 const Works = lazy(() => import('./components/Works'));
-// const StarsCanvas = lazy(() => import('./components/StarsCanvas'));
 const StarsCanvas = lazy(() => import('./components/canvas/Stars'));
 
 // Loader component
@@ -87,7 +85,6 @@ const App = () => {
         <Suspense fallback={''}>
           <div className="relative z-0 bg-primary">
             <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-              {/* <Loader /> */}
               <Navbar />
               <Hero />
             </div>

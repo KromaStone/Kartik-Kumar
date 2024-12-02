@@ -145,7 +145,6 @@ const Contact = () => {
           className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] flex justify-center items-center'
         >
           <ContactAnimatedBeam />
-          {/* <EarthCanvas /> */}
         </motion.div>
 
       </div>

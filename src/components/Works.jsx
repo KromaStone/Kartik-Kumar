@@ -36,9 +36,6 @@ const ProjectCard = ({
 
             {project_live_link && (
               <div
-                // onClick={() =>
-                //   window.open(project_live_link,
-                //   )}
                 onClick={() => window.open(project_live_link, '_blank')}
 
                 className='bg-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer absolute right-7'
@@ -62,16 +59,10 @@ const ProjectCard = ({
               />
             </div>
 
-
-
-
           </div>
         </div>
-
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          {/* {underProgress &&
-            <p>jdabsjbdfba kd</p>} */}
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 

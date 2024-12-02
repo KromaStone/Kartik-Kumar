@@ -11,12 +11,10 @@ import '../App.css'
 
 const ServiceCard = ({ index, title, icon }) => (
   <div className='xs:w-[250px] w-full cursor-pointer'>
-    {/* <Tilt className='xs:w-[250px] sm:w-[250px] lg:w-[30%] w-full'> */}
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card hover:shadow-500/40 '
     >
-      {/* <BorderBeam size={250} duration={12} delay={9} /> */}
 
       <div
         options={{

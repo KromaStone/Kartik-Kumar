@@ -5,6 +5,9 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 import logo from '../assets/logo.png'
+import { motion } from "framer-motion";
+import { fromUp } from "../utils/motion";
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -27,6 +30,7 @@ const Navbar = () => {
   }, []);
 
   return (
+
     <nav
       className={`${styles.paddingX
         } w-full flex items-center py-4 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
@@ -94,8 +98,15 @@ const Navbar = () => {
               ))}
             </ul>
           </div> */}
-          <div
-            className={`${!toggle ? "hidden" : "flex"
+
+          <motion.div
+            variants={fromUp}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            className={`${!toggle
+              ? 'right-[-600px] transition-all ease-in-out duration-300'
+              : 'flex transition-all ease-in-out duration-300'
               } p-6 animated-gradient border-[#444444] border-[1px] absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl w-[90%]`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
@@ -113,8 +124,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
+          </motion.div>
         </div>
       </div>
 

@@ -21,7 +21,6 @@ const FeedbackCard = ({
     className='bg-black-200 p-8 rounded-3xl xs:w-[320px] w-[320px]'
   >
     <p className='text-white font-semibold text-[28px] leading-none green-text-gradient'>	&lt;&gt; </p>
-    {/* bg-gradient-to-br from-blue-400 to-green-600 bg-clip-text text-transparent */}
     <div className='mt-1'>
       <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
 
@@ -34,17 +33,8 @@ const FeedbackCard = ({
           <p className='text-white font-medium text-[16px]'>
             <span className='blue-text-gradient'> &#x23;</span> {name}
           </p>
-
-          {/* <p className='mt-1 text-secondary text-[12px]'>
-            {designation} of {company}
-          </p> */}
         </div>
 
-        {/* <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className='w-10 h-10 rounded-full object-cover'
-        /> */}
       </div>
     </div>
   </motion.div>
