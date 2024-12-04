@@ -271,7 +271,7 @@ const projects = [
   {
     name: "Web Extension",
     description:
-      "I have developed this web extension using leveraging JavaScript, HTML, and CSS. The Extension Genreate random paswords includion uppercase, lowercase, numbers and charecter.",
+      " I have developed this web extension using leveraging JavaScript, HTML, and CSS. The Extension Generates random passwords including uppercase, lowercase, numbers and character.",
     tags: [
       {
         name: "JavaScript",
