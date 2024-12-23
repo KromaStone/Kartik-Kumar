@@ -4,8 +4,18 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const name = "Kartik";
+const isMobileBrowser = () => {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  // Check for common mobile platforms
+  const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+
+  return isMobile; // Return true for mobile browsers
+};
 
 const Hero = () => {
+  const shouldRenderCanvas = !isMobileBrowser(); // Only render canvas if it's not a mobile browser
+
   return (
     <section className={`relative  w-full h-screen mx-auto`}>
       <div
@@ -44,9 +54,23 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+
+      {shouldRenderCanvas ? (
+        <ComputersCanvas />
+      ) : (
+        <div className="flex items-center justify-center h-full">
+          <p className={`${styles.heroSubText} text-center`}>
+            <span className="block">
+              &lt; Welcome to {name}&apos;s portfolio &#x2f;&gt;
+            </span>
+            &lt;Canvas is not supported on your device &#x2f; &gt;
+          </p>
+        </div>
+      )}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+
+
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div

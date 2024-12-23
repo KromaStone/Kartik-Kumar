@@ -312,7 +312,7 @@ const projects = [
     ],
     image: fitness360Project,
     source_code_link: "https://github.com/KromaStone",
-    project_live_link: "https://github.com/KromaStone",
+    project_live_link: "https://fitness360.vercel.app",
   },
 ];
 
