@@ -292,7 +292,7 @@ const projects = [
   },
 
   {
-    name: "(Under Development)",
+    name: "Fitness360",
     underProgress: true,
     description:
       "A comprehensive fitness web application offering live video streaming, pre-recorded sessions, personalized diet charts, live classes, and interactive chat features for both users and trainers.",
