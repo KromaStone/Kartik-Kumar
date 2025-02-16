@@ -23,14 +23,24 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className={`orange-pink-gradient p-[1px] rounded-2xl `}>
       <div
         options={{ max: 45, scale: 1, speed: 450, }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border-[444444] hover:bg-primary transition ease-in-out duration-300 '
+        className='group bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border-[444444] hover:bg-primary transition ease-in-out duration-300 '
       >
-        <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
+        {/* <div className='relative w-full h-[230px]'>
+          <div className="w-full h-[230px] ">
+            <img
+              src={image}
+              alt='project_image'
+              className='w-full h-full object-cover rounded-2xl group-hover:scale-110'
+            />
+          </div> */}
+        <div className='relative w-full h-[230px] overflow-hidden rounded-2xl'>
+          <div className="w-full h-[230px] rounded-2xl">
+            <img
+              src={image}
+              alt='project_image'
+              className='w-full h-full object-cover rounded-2xl transition-transform duration-300 ease-in-out group-hover:scale-110'
+            />
+          </div>
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover '>
 
