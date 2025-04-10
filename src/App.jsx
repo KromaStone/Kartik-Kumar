@@ -3,7 +3,7 @@ import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import CursorFollower from './components/CursorFollower';
 import './App.css';
-
+import ClickSpark from './ClickSpark/ClickSpark';
 const About = lazy(() => import('./components/About'));
 const Contact = lazy(() => import('./components/Contact'));
 const Feedbacks = lazy(() => import('./components/Feedbacks'));
@@ -80,25 +80,33 @@ const App = () => {
 
   return (
     <>
-      <CursorFollower />
-      <BrowserRouter>
-        <Suspense fallback={''}>
-          <div className="relative z-0 bg-primary">
-            <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-              <Navbar />
-              <Hero />
+      <ClickSpark
+        sparkColor='#fff'
+        sparkSize={10}
+        sparkRadius={15}
+        sparkCount={8}
+        duration={400}
+      >
+        <CursorFollower />
+        <BrowserRouter>
+          <Suspense fallback={''}>
+            <div className="relative z-0 bg-primary">
+              <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+                <Navbar />
+                <Hero />
+              </div>
+              <About />
+              <Tech />
+              <Works />
+              <Feedbacks />
+              <div className="relative z-0">
+                <Contact />
+                <StarsCanvas />
+              </div>
             </div>
-            <About />
-            <Tech />
-            <Works />
-            <Feedbacks />
-            <div className="relative z-0">
-              <Contact />
-              <StarsCanvas />
-            </div>
-          </div>
-        </Suspense>
-      </BrowserRouter>
+          </Suspense>
+        </BrowserRouter>
+      </ClickSpark>
     </>
   );
 };
